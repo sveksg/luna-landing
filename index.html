@@ -144,7 +144,7 @@
     .hero__figure {
       position: absolute;
       bottom: 0;
-      right: calc(var(--card-h) * 0.489 - 47px);
+      right: calc(var(--card-h) * 0.489 + 33px);
       height: calc(var(--card-h) * 0.88);
       aspect-ratio: 445 / 618;
       z-index: 1;
@@ -153,10 +153,16 @@
       position: absolute;
       z-index: -1;
       left: 50%;
-      top: 50%;
-      width: 158%;
-      height: auto;
-      transform: translate(-50%, -46%);
+      top: 46%;
+      width: 96%;
+      height: 122%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(50% 50% at 50% 50%,
+          rgba(147, 121, 206, 0.55) 0%,
+          rgba(147, 121, 206, 0.30) 42%,
+          rgba(147, 121, 206, 0) 70%);
+      filter: blur(34px);
+      border-radius: 50%;
       pointer-events: none;
     }
     .hero__girl {
@@ -171,7 +177,7 @@
       position: absolute;
       z-index: 2;
       bottom: 6%;
-      right: 0;
+      right: 80px;
       height: 72%;
       width: auto;
       border-radius: 30px;
@@ -256,7 +262,7 @@
 
       <div class="hero__media">
         <div class="hero__figure">
-          <img class="hero__glow" src="assets/glow.svg" alt="" aria-hidden="true" />
+          <span class="hero__glow" aria-hidden="true"></span>
           <img class="hero__girl" src="assets/girl.png" alt="ИИ-психолог Луна" />
         </div>
         <img class="hero__chat" src="assets/chat.png" alt="Диалог с Луной в Telegram" />
