@@ -35,7 +35,9 @@
 
     .hero {
       background: var(--bg);
-      padding: clamp(24px, 4vw, 80px) 80px;
+      /* Боковые поля пропорциональны ширине экрана: 8.85vw = 170px при 1920px,
+         поэтому карточка = 1580px на экране 1920 и держит ту же пропорцию на меньших. */
+      padding: clamp(24px, 4vw, 80px) 8.85vw;
       display: flex;
       justify-content: center;
     }
@@ -209,9 +211,9 @@
         align-self: auto;
         height: clamp(340px, 92vw, 500px);
       }
-      .hero__figure { left: 0; right: auto; height: 100%; }
+      .hero__figure { left: -3%; right: auto; height: 100%; }
       .hero__chat {
-        right: 3%;
+        right: 0;
         bottom: 3%;
         height: 82%;
       }
@@ -222,7 +224,7 @@
         padding-left: 10px;
         padding-right: 10px;
       }
-      .hero__chat { right: 0; height: 76%; }
+      .hero__chat { height: 76%; }
     }
   </style>
 </head>
