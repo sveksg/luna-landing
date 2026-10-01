@@ -4,13 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>ИИ-психолог в Telegram — выслушает и поддержит | Луна</title>
-  <meta name="description" content="Выслушает и поможет справиться с тревогой, расставанием, выгоранием и одиночеством. Когда накрывает или не с кем поговорить. Анонимно, 24/7, первое бесплатно" />
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113226062', 'ym');
+
+      ym(113226062, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/113226062" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="180x180" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <title>Одиноко, не с кем поговорить? ИИ-психолог Луна в Telegram</title>
+  <meta name="description" content="Поможет, когда тревожно, тяжело после расставания, выгорание или просто одиноко и не с кем поговорить. Анонимно, начни бесплатно в телеграм" />
 
   <!-- Open Graph / Telegram / соцсети -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="ИИ-психолог в Telegram — выслушает и поддержит | Луна" />
-  <meta property="og:description" content="Выслушает и поможет справиться с тревогой, расставанием, выгоранием и одиночеством. Когда накрывает или не с кем поговорить. Анонимно, 24/7, первое бесплатно" />
+  <meta property="og:title" content="Одиноко, не с кем поговорить? ИИ-психолог Луна в Telegram" />
+  <meta property="og:description" content="Поможет, когда тревожно, тяжело после расставания, выгорание или просто одиноко и не с кем поговорить. Анонимно, начни бесплатно в телеграм" />
   <meta property="og:image" content="girl.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -501,6 +519,710 @@
       .b2__quote p { font-size: 16.5px; line-height: 1.45; }
       .b2__quote .notes { width: 48px; right: 24px; top: -12px; }
     }
+
+    /* ============================================================
+       БЛОК 3 — Сравнение с ChatGPT + «Создана, чтобы быть под рукой»
+       ============================================================ */
+    .b3 {
+      background: var(--bg);
+      padding: clamp(40px, 5vw, 72px) clamp(16px, 4vw, 40px);
+      display: flex;
+      justify-content: center;
+    }
+    .b3__inner {
+      width: 100%;
+      max-width: 1360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(18px, 2.4vw, 24px);
+    }
+
+    .b3__title {
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: clamp(26px, 6vw, 46px);
+      line-height: 1.29;
+      letter-spacing: -0.01em;
+    }
+    .b3__title .accent { color: var(--accent); }
+
+    .b3__subtitle {
+      max-width: 720px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
+      font-size: clamp(16px, 3.4vw, 28px);
+      line-height: 1.4;
+    }
+    .b3__subtitle b { color: #fff; font-weight: 400; }
+
+    /* ---------- Большая карточка ---------- */
+    .b3__card {
+      position: relative;
+      width: 100%;
+      margin-top: 56px;
+    }
+    .b3__cardbody {
+      position: relative;
+      overflow: hidden;
+      background: #1F1A34;
+      border-radius: clamp(28px, 4vw, 64px);
+      padding: clamp(44px, 5vw, 60px) clamp(20px, 3vw, 45px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(56px, 7vw, 110px);
+    }
+    .b3__cardbody > * { position: relative; z-index: 1; }
+    .b3__bg {
+      position: absolute;
+      z-index: 0;
+      right: -4%;
+      bottom: 0;
+      width: 78%;
+      height: auto;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    /* цитата-плашка, наезжает на верх карточки */
+    .b3__pill {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #353148;
+      border-radius: 44px;
+      padding: 12px 18px;
+      width: max-content;
+      max-width: calc(100% - 16px);
+      z-index: 3;
+    }
+    .b3__pill p {
+      margin: 0;
+      color: #fff;
+      font-style: italic;
+      font-weight: 500;
+      font-size: clamp(12px, 3vw, 19px);
+      line-height: 1.3;
+      text-align: center;
+    }
+    .b3__pill .notes {
+      position: absolute;
+      top: -13px;
+      right: 8px;
+      width: clamp(34px, 3vw, 44px);
+      height: auto;
+    }
+
+    /* ---------- Сравнение бабблов ---------- */
+    .b3__compare {
+      position: relative;
+      width: 100%;
+      max-width: 1010px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 14px;
+    }
+    .b3__msg {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 28px;
+      padding: 14px;
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    .b3__ava {
+      flex-shrink: 0;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: #fff;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .b3__ava img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .b3__ava--logo { background: #fff; }
+    .b3__ava--logo img { width: 62%; height: 62%; object-fit: contain; }
+    .b3__bubble {
+      background: #fff;
+      color: #100E24;
+      border-radius: 22px;
+      padding: 14px 15px;
+      font-size: clamp(12px, 1vw, 13.5px);
+      line-height: 1.55;
+      font-weight: 500;
+    }
+    .b3__bubble ol {
+      margin: 4px 0 0;
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    /* ---------- Секция «Создана, чтобы быть под рукой» ---------- */
+    .b3__created {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(18px, 2.4vw, 24px);
+    }
+    .b3__title2 {
+      max-width: 760px;
+      text-align: center;
+      font-weight: 600;
+      font-size: clamp(24px, 5.4vw, 34.5px);
+      line-height: 1.18;
+      color: #fff;
+    }
+    .b3__title2 .accent { color: var(--accent); }
+    .b3__subtitle2 {
+      max-width: 760px;
+      text-align: center;
+      font-size: clamp(15px, 2.6vw, 18px);
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .b3__subtitle2 b { color: #fff; font-weight: 700; }
+
+    /* ---------- Стопка карточек ---------- */
+    .b3__stack {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: clamp(8px, 1.5vw, 16px);
+    }
+    .b3__scard {
+      position: relative;
+      width: 100%;
+      /* справа зарезервировано место под маскота, чтобы текст не заходил под него */
+      padding: clamp(20px, 3vw, 28px) clamp(64px, 19vw, 84px) clamp(20px, 3vw, 28px) clamp(22px, 3vw, 32px);
+      border-radius: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      /* появление друг за другом */
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .b3__scard + .b3__scard { margin-top: -14px; }
+    .b3__stack.is-visible .b3__scard { opacity: 1; transform: none; }
+    .b3__stack.is-visible .b3__scard:nth-child(1) { transition-delay: 0s; }
+    .b3__stack.is-visible .b3__scard:nth-child(2) { transition-delay: 0.14s; }
+    .b3__stack.is-visible .b3__scard:nth-child(3) { transition-delay: 0.28s; }
+    .b3__stack.is-visible .b3__scard:nth-child(4) { transition-delay: 0.42s; }
+
+    .b3__scard h4 { font-weight: 600; font-size: clamp(17px, 2.2vw, 22px); line-height: 1.15; }
+    .b3__scard p { font-weight: 500; font-size: clamp(14px, 1.9vw, 16px); line-height: 1.5; opacity: 0.85; }
+
+    /* цвета карточек */
+    .b3__scard--1 { background: #4326BF; color: #fff; }
+    .b3__scard--2 { background: #745BE2; color: #fff; }
+    .b3__scard--3 { background: #AB97FF; color: #1F1A34; }
+    .b3__scard--4 { background: #C5B8FE; color: #1F1A34; }
+    .b3__scard--1 h4, .b3__scard--2 h4 { color: #fff; }
+    .b3__scard--3 h4, .b3__scard--4 h4 { color: #1F1A34; }
+    .b3__scard--1 p, .b3__scard--2 p { color: rgba(255, 255, 255, 0.85); }
+    .b3__scard--3 p, .b3__scard--4 p { color: #1F1A34; }
+
+    /* значок-иконка (таб сверху справа) */
+    .b3__badge {
+      position: absolute;
+      top: clamp(-36px, -8vw, -24px);
+      right: clamp(-2px, 1%, 14px);
+      width: clamp(56px, 15vw, 82px);
+      height: auto;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .b3__badge img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.3));
+      /* парящая анимация */
+      animation: b3-float 3s ease-in-out infinite;
+    }
+    .b3__scard--2 .b3__badge img { animation-delay: 0.5s; }
+    .b3__scard--3 .b3__badge img { animation-delay: 1s; }
+    .b3__scard--4 .b3__badge img { animation-delay: 1.5s; }
+    @keyframes b3-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .b3__scard { opacity: 1; transform: none; transition: none; }
+      .b3__badge svg { animation: none; }
+    }
+
+    /* ---------- Блок 3 desktop ---------- */
+    @media (min-width: 901px) {
+      .b3 { padding-top: 40px; padding-bottom: 40px; }
+      .b3__inner { gap: 14px; max-width: 1360px; }
+      .b3__title { font-size: 34.5px; line-height: 1.29; }
+      .b3__subtitle { font-size: 21px; line-height: 1.5; max-width: 700px; }
+
+      .b3__card { gap: clamp(80px, 8vw, 110px); border-radius: 64px; padding: 60px 45px; }
+
+      .b3__pill { padding: 16px 22px; }
+      .b3__pill p { font-size: 19px; white-space: nowrap; }
+
+      /* два баббла в ряд */
+      .b3__compare { flex-direction: row; align-items: flex-end; justify-content: center; gap: 16px; }
+      .b3__msg { flex: 1 1 0; max-width: 420px; }
+
+      .b3__title2 { font-size: 34.5px; }
+      .b3__subtitle2 { font-size: 18px; }
+
+      .b3__card { margin-top: 40px; }
+
+      /* веерная стопка: каждая карточка шире предыдущей */
+      .b3__scard { width: auto; border-radius: 30px; padding: 28px 128px 28px 32px; }
+      .b3__scard + .b3__scard { margin-top: -16px; }
+      .b3__scard--1 { width: 660px; }
+      .b3__scard--2 { width: 712px; }
+      .b3__scard--3 { width: 784px; }
+      .b3__scard--4 { width: 846px; }
+      .b3__scard h4 { font-size: 22px; }
+      .b3__scard p { font-size: 16px; }
+
+      .b3__badge { width: 96px; top: -40px; right: 18px; }
+    }
+
+    /* ============================================================
+       БЛОК 4 — «За каждым ответом Луны» + спирали (параллакс)
+       ============================================================ */
+    .b4 {
+      position: relative;
+      background: var(--bg);
+      overflow: hidden;
+      padding: clamp(48px, 6vw, 80px) clamp(16px, 4vw, 40px);
+      display: flex;
+      justify-content: center;
+    }
+    .b4__inner {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 808px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(16px, 2.2vw, 22px);
+    }
+    .b4__title {
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: clamp(26px, 6vw, 46px);
+      line-height: 1.29;
+      letter-spacing: -0.01em;
+    }
+    .b4__title .accent { color: var(--accent); }
+    .b4__subtitle {
+      max-width: 730px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
+      font-size: clamp(15px, 3vw, 24px);
+      line-height: 1.5;
+    }
+    .b4__subtitle b { color: rgba(255, 255, 255, 0.98); font-weight: 400; }
+
+    .b4__cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: clamp(8px, 1.5vw, 16px);
+    }
+    .b4__row { display: flex; gap: 8px; }
+    .b4__card {
+      flex: 1 1 0;
+      background: var(--card);
+      border-radius: 24px;
+      padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 24px);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .b4__card h4 { color: #fff; font-weight: 600; font-size: clamp(16px, 2vw, 18px); line-height: 1.33; }
+    .b4__card p { color: rgba(255, 255, 255, 0.5); font-weight: 400; font-size: clamp(15px, 2vw, 18px); line-height: 1.33; }
+
+    .b4__btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      color: #060606;
+      font-weight: 700;
+      font-size: clamp(15px, 2vw, 17.24px);
+      text-decoration: none;
+      padding: clamp(14px, 1.6vw, 16px) 24px;
+      border-radius: 24px;
+      box-shadow: 0 0 18px rgba(255, 236, 236, 0.39);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .b4__btn:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(255, 236, 236, 0.5); }
+    .b4__btn svg { width: clamp(26px, 2.6vw, 30px); height: clamp(26px, 2.6vw, 30px); flex-shrink: 0; }
+
+    /* спирали на фоне */
+    .b4__spiral {
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      width: var(--s);
+      height: auto;
+      opacity: 0;
+      transform: translateY(var(--py, 0)) rotate(var(--rot));
+      transition: opacity 0.9s ease;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .b4.is-in .b4__spiral { opacity: var(--op); }
+
+    @media (max-width: 900px) {
+      .b4__row { flex-direction: column; }
+    }
+    @media (min-width: 901px) {
+      .b4__title { font-size: 34.5px; }
+      .b4__subtitle { font-size: 18px; line-height: 1.55; max-width: 730px; }
+      .b4__card { padding: 36px 24px; }
+      .b4__card h4 { font-size: 18px; }
+      .b4__card p { font-size: 18px; }
+      .b4__btn { font-size: 17.24px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .b4__spiral { transform: rotate(var(--rot)) !important; }
+    }
+
+    /* ============================================================
+       БЛОК 5 — Тарифы + финальный CTA
+       ============================================================ */
+    .b5 {
+      background: var(--bg);
+      padding: clamp(40px, 5vw, 72px) clamp(16px, 4vw, 40px);
+      display: flex;
+      justify-content: center;
+    }
+    .b5__inner {
+      width: 100%;
+      max-width: 1080px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(20px, 3vw, 32px);
+    }
+    .b5__title {
+      max-width: 860px;
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: clamp(26px, 6vw, 46px);
+      line-height: 1.29;
+      letter-spacing: -0.01em;
+    }
+    .b5__title .accent { color: var(--accent); }
+
+    /* ---------- Карточка тарифов ---------- */
+    .b5__pricing {
+      position: relative;
+      width: 100%;
+      background: linear-gradient(180deg, #1F1A33 0%, #26223F 45%, #1D1831 100%);
+      box-shadow: inset 0 20px 24px rgba(155, 127, 207, 0.08);
+      border-radius: clamp(32px, 5vw, 64px);
+      padding: clamp(28px, 4vw, 44px) clamp(18px, 3vw, 48px);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(28px, 4vw, 44px);
+    }
+
+    .b5__plans { display: flex; gap: clamp(12px, 2vw, 24px); align-items: stretch; }
+    .b5__plan {
+      position: relative;
+      flex: 1 1 0;
+      background: #C5B8FE;
+      border-radius: clamp(28px, 3vw, 48px);
+      padding: clamp(32px, 4vw, 48px) clamp(18px, 2vw, 24px) clamp(20px, 2vw, 24px);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(14px, 2vw, 20px);
+    }
+    .b5__plan-label { color: rgba(16, 14, 36, 0.8); font-weight: 500; font-size: clamp(16px, 2vw, 18px); line-height: 1.1; }
+    .b5__plan-price { color: #100E24; font-weight: 700; font-size: clamp(32px, 4.4vw, 40px); line-height: 1; margin-top: 10px; }
+    .b5__plan-desc { flex: 1 1 auto; color: #100E24; opacity: 0.6; font-weight: 500; font-size: clamp(14px, 1.9vw, 16px); line-height: 1.6; }
+    .b5__plan-desc b { font-weight: 700; }
+    .b5__plan-btn {
+      display: flex; justify-content: center; align-items: center; gap: 7px;
+      padding: 14px 20px; border-radius: 24px; text-decoration: none;
+      font-weight: 700; font-size: clamp(15px, 2vw, 18px);
+      box-shadow: 0 0 18px rgba(255, 236, 236, 0.39);
+      transition: transform 0.15s ease;
+    }
+    .b5__plan-btn:hover { transform: translateY(-2px); }
+    .b5__plan-btn--white { background: #fff; color: #060606; }
+    .b5__plan-btn--purple { background: #6F58DA; color: #fff; }
+    .b5__plan-btn svg { width: 26px; height: 26px; flex: none; }
+    .b5__badge {
+      position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
+      background: #6F58DA; color: #fff; font-style: italic; font-weight: 500;
+      font-size: clamp(14px, 1.6vw, 18px); padding: 8px 20px; border-radius: 12px; white-space: nowrap;
+    }
+
+    /* ---------- Фичи с тумблерами ---------- */
+    .b5__features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px clamp(20px, 4vw, 48px); }
+    .b5__feat { display: flex; align-items: center; gap: 12px; color: rgba(255, 255, 255, 0.8); font-weight: 400; font-size: clamp(15px, 2vw, 18px); line-height: 1.25; }
+    .b5__toggle { position: relative; flex: none; width: 38px; height: 26px; }
+    .b5__toggle::before { content: ""; position: absolute; left: 0; top: 5px; width: 33px; height: 16px; background: #452EAA; border-radius: 999px; }
+    .b5__toggle::after { content: ""; position: absolute; left: 12px; top: 0; width: 26px; height: 26px; border-radius: 50%; background: rgba(197, 184, 254, 0.2); }
+    .b5__toggle i { position: absolute; z-index: 1; left: 19px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: #C5B8FE; }
+
+    /* ---------- Финальный CTA ---------- */
+    .b5__cta {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: linear-gradient(180deg, #1F1A33 0%, #26223F 45%, #1D1831 100%);
+      border-radius: clamp(32px, 5vw, 64px);
+      min-height: clamp(240px, 22vw, 300px);
+      padding: clamp(24px, 5vw, 60px);
+      display: flex;
+      align-items: center;
+    }
+    .b5__cta-left {
+      position: relative; z-index: 3;
+      max-width: 46%;
+      display: flex; flex-direction: column; align-items: flex-start;
+      gap: clamp(14px, 2vw, 24px);
+    }
+    .b5__cta-left h3 { color: #fff; font-weight: 700; font-size: clamp(20px, 3.4vw, 36px); line-height: 1.2; }
+    .b5__cta-left h3 .accent { color: var(--accent); }
+    .b5__cta-btn {
+      display: inline-flex; justify-content: center; align-items: center; gap: 7px;
+      background: #fff; color: #060606; font-weight: 700; font-size: clamp(14px, 1.8vw, 17.24px);
+      text-decoration: none; padding: 14px 24px; border-radius: 24px;
+      box-shadow: 0 0 18px rgba(255, 236, 236, 0.39); transition: transform 0.15s ease;
+    }
+    .b5__cta-btn:hover { transform: translateY(-2px); }
+    .b5__cta-btn svg { width: 26px; height: 26px; flex: none; }
+
+    .b5__cta-media { position: absolute; inset: 0; z-index: 1; }
+    .b5__phonebox {
+      position: absolute; bottom: 0; right: 22%; height: 100%;
+      aspect-ratio: 286 / 295;
+      overflow: hidden;
+      border-radius: 20px 20px 0 0;
+      box-shadow: inset 0 12px 27px rgba(0, 0, 0, 0.25), inset 0 -12px 11px rgba(0, 0, 0, 0.25);
+      z-index: 1;
+    }
+    .b5__phonebox img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+    .b5__girl { position: absolute; bottom: 0; right: 3.7%; height: 106%; width: auto; z-index: 2; pointer-events: none; }
+
+    /* desktop фикс */
+    @media (min-width: 901px) {
+      .b5__title { font-size: 34.5px; }
+      .b5__plan-label { font-size: 18px; }
+      .b5__plan-price { font-size: 40px; }
+      .b5__plan-desc { font-size: 16px; }
+      .b5__plan-btn { font-size: 18px; }
+      .b5__feat { font-size: 18px; }
+      .b5__cta-left h3 { font-size: 36px; }
+      .b5__cta-btn { font-size: 17.24px; }
+    }
+
+    /* планшет/мобилка */
+    @media (max-width: 900px) {
+      .b5__plans { flex-direction: column; }
+      .b5__plan { padding-top: 40px; }
+      .b5__features { grid-template-columns: 1fr; gap: 12px; }
+      /* CTA: картинки не переносим — они привязаны к ширине и уменьшаются сами */
+    }
+    /* мобилка: CTA разбивается на две карточки — картинка сверху, текст снизу */
+    @media (max-width: 700px) {
+      .b5__cta {
+        flex-direction: column;
+        align-items: stretch;
+        background: transparent;
+        border-radius: 0;
+        overflow: visible;
+        padding: 0;
+        min-height: 0;
+        gap: 8px;
+      }
+      .b5__cta-media {
+        position: relative;
+        inset: auto;
+        order: -1;
+        z-index: auto;
+        width: 100%;
+        height: clamp(210px, 56vw, 300px);
+        background: linear-gradient(180deg, #1F1A33 0%, #26223F 45%, #1D1831 100%);
+        border-radius: clamp(24px, 6vw, 32px);
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .b5__cta-media .b5__phonebox {
+        position: relative; right: auto; bottom: auto;
+        height: 86%; width: auto; margin-right: -5%;
+      }
+      .b5__cta-media .b5__girl {
+        position: relative; right: auto; bottom: auto;
+        height: 100%; width: auto;
+      }
+      .b5__cta-left {
+        max-width: none; width: 100%;
+        background: linear-gradient(180deg, #1F1A33 0%, #26223F 45%, #1D1831 100%);
+        border-radius: clamp(24px, 6vw, 32px);
+        padding: clamp(24px, 6vw, 40px);
+      }
+    }
+    /* ============================================================
+       ФУТЕР
+       ============================================================ */
+    .ft {
+      position: relative;
+      background: var(--bg);
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: clamp(28px, 4vw, 40px) clamp(16px, 4vw, 60px) clamp(40px, 6vw, 72px);
+    }
+    .ft__watermark {
+      position: absolute;
+      left: 50%;
+      bottom: clamp(6px, 1.5vw, 16px);
+      transform: translateX(-50%);
+      width: calc(100% - clamp(24px, 6vw, 80px));
+      max-width: 1427px;
+      height: auto;
+      display: block;
+      pointer-events: none;
+    }
+    .ft__inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1320px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+    .ft__logo {
+      height: 32px;
+      width: auto;
+      display: block;
+      flex-shrink: 0;
+    }
+    .ft__right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+      max-width: 680px;
+      text-align: right;
+    }
+    .ft__disclaimer { color: #fff; opacity: 0.4; font-style: italic; font-weight: 400; font-size: 14px; line-height: 1.43; }
+    .ft__policy-link {
+      background: none; border: 0; padding: 0; margin: 0;
+      color: #fff; font: inherit; font-size: 14px; line-height: 1.43;
+      cursor: pointer; text-align: right;
+    }
+    .ft__policy-link:hover { text-decoration: underline; }
+    .ft__dev {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: #452EAA; color: #fff; font-size: 14px; line-height: 1.43;
+      text-decoration: none; padding: 12px 24px; border-radius: 12px;
+      transition: background 0.15s ease;
+    }
+    .ft__dev:hover { background: #523cc4; }
+
+    /* модалка политики */
+    .ft__modal { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .ft__modal[hidden] { display: none; }
+    .ft__modal-backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.65); backdrop-filter: blur(2px); }
+    .ft__modal-card {
+      position: relative; z-index: 1;
+      width: 100%; max-width: 760px; max-height: 86vh; overflow-y: auto;
+      background: #1E1932; border-radius: 24px;
+      padding: clamp(24px, 4vw, 40px);
+      color: rgba(255, 255, 255, 0.82);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+    }
+    .ft__modal-close {
+      position: absolute; top: 14px; right: 14px;
+      width: 36px; height: 36px; border: 0; border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1); color: #fff; font-size: 22px; line-height: 1;
+      cursor: pointer; transition: background 0.15s ease;
+    }
+    .ft__modal-close:hover { background: rgba(255, 255, 255, 0.2); }
+    .ft__modal-card h3 { color: #fff; font-size: clamp(20px, 3vw, 26px); line-height: 1.25; margin-bottom: 16px; padding-right: 44px; }
+    .ft__modal-body h4 { color: #fff; font-size: 16px; font-weight: 600; margin: 18px 0 6px; }
+    .ft__modal-body p { font-size: 14px; line-height: 1.6; margin-bottom: 8px; }
+    .ft__modal-body ul { margin: 6px 0 10px; padding-left: 20px; }
+    .ft__modal-body li { font-size: 14px; line-height: 1.6; margin-bottom: 4px; }
+
+    @media (max-width: 720px) {
+      .ft__inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .ft__right { align-items: flex-start; text-align: left; max-width: none; }
+      .ft__disclaimer, .ft__policy-link { text-align: left; }
+      .ft__watermark { font-size: 19vw; }
+    }
+    /* ============================================================
+       EXIT-INTENT ПОПАП «Не уходи!»
+       ============================================================ */
+    .exitpop { position: fixed; inset: 0; z-index: 1100; display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .exitpop[hidden] { display: none; }
+    .exitpop__backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.6); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
+    .exitpop__card {
+      position: relative; z-index: 1;
+      width: 100%; max-width: 560px;
+      background: #1F1B35;
+      border-radius: clamp(28px, 5vw, 48px);
+      padding: 16px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+      animation: exitpop-in 0.25s ease;
+    }
+    @keyframes exitpop-in { from { opacity: 0; transform: translateY(14px) scale(0.98); } to { opacity: 1; transform: none; } }
+    .exitpop__close {
+      position: absolute; top: 24px; right: 24px; z-index: 3;
+      width: 40px; height: 40px; border: 0; background: none;
+      color: #fff; opacity: 0.4; font-size: 28px; line-height: 1; cursor: pointer;
+      transition: opacity 0.15s ease;
+    }
+    .exitpop__close:hover { opacity: 0.85; }
+    .exitpop__inner {
+      position: relative; overflow: hidden;
+      background: #100E24;
+      border-radius: clamp(22px, 4vw, 36px);
+      padding: clamp(32px, 6vw, 44px) clamp(24px, 5vw, 56px);
+      text-align: center;
+    }
+    .exitpop__glow { position: absolute; left: 50%; bottom: -6%; transform: translateX(-50%); width: 112%; height: auto; pointer-events: none; }
+    .exitpop__title { position: relative; color: #fff; font-weight: 700; font-size: clamp(22px, 4vw, 28px); line-height: 1.35; }
+    .exitpop__sub { position: relative; margin-top: 14px; color: #fff; opacity: 0.5; font-weight: 500; font-size: clamp(15px, 2.4vw, 18px); line-height: 1.4; }
+    .exitpop__btn {
+      position: relative; margin-top: clamp(22px, 4vw, 30px);
+      display: inline-flex; align-items: center; gap: 7px;
+      background: #fff; color: #060606; font-weight: 700; font-size: clamp(15px, 2vw, 17.24px);
+      text-decoration: none; padding: 12px 18px; border-radius: 34px;
+      box-shadow: 0 0 18px rgba(255, 236, 236, 0.39); transition: transform 0.15s ease;
+    }
+    .exitpop__btn:hover { transform: translateY(-2px); }
+    .exitpop__btn > svg { width: 29px; height: 29px; flex: none; }
   </style>
 </head>
 <body>
@@ -524,7 +1246,7 @@
           <p class="hero__subtitle">Живой диалог по научному подходу — анонимно</p>
         </div>
 
-        <a class="hero__cta" href="https://t.me/LunaTherapyBot?start=land_opt" target="_blank" rel="noopener">
+        <a class="hero__cta" href="https://t.me/LunaTherapyBot?start=direct_luna" target="_blank" rel="noopener">
           Начать разговор в telegram
           <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <defs>
@@ -578,7 +1300,7 @@
 
         <!-- bottom-left: button -->
         <div class="b2__panel b2__cta-wrap">
-          <a class="b2__btn" href="https://t.me/LunaTherapyBot?start=land_opt" target="_blank" rel="noopener">
+          <a class="b2__btn" href="https://t.me/LunaTherapyBot?start=direct_luna" target="_blank" rel="noopener">
             Поговорить об этом с Луной
             <img src="logos_telegram.svg" alt="" aria-hidden="true" />
           </a>
@@ -592,6 +1314,374 @@
       </div>
     </div>
   </section>
+
+  <!-- ===================== БЛОК 3 — Сравнение + возможности ===================== -->
+  <section class="b3">
+    <div class="b3__inner">
+      <h2 class="b3__title">
+        Выговориться в ChatGPT — <span class="accent">не то же самое</span>
+      </h2>
+      <p class="b3__subtitle">
+        Обычные ИИ дают шаблонные советы, забывают, о чём ты говорила, а <b>личное — может использоваться для обучения нейросети</b>
+      </p>
+
+      <div class="b3__card">
+        <!-- цитата пользователя -->
+        <div class="b3__pill">
+          <p>Мне так плохо, меня бросил парень, не знаю как не думать о нём</p>
+          <img class="notes" src="notes.svg" alt="" aria-hidden="true" />
+        </div>
+
+        <div class="b3__cardbody">
+          <img class="b3__bg" src="bg.svg" alt="" aria-hidden="true" />
+
+        <!-- сравнение ChatGPT vs Луна -->
+        <div class="b3__compare">
+          <!-- ChatGPT -->
+          <div class="b3__msg">
+            <span class="b3__ava b3__ava--logo">
+              <img src="chatgpt.svg" alt="ChatGPT" />
+            </span>
+            <div class="b3__bubble">
+              Мне жаль это слышать. Вот 5 способов как справиться:
+              <ol>
+                <li>Дай себе время погрустить — не пытайся делать вид, что всё ок</li>
+                <li>Не пиши ему на эмоциях</li>
+                <li>Будь рядом с людьми</li>
+                <li>Займись собой</li>
+                <li>Убери фотографии, переписку и его соцсети</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Луна -->
+          <div class="b3__msg">
+            <span class="b3__ava">
+              <img src="luna-avatar.png" alt="Луна" />
+            </span>
+            <div class="b3__bubble">
+              Моя хорошая, это такое раздирающее, невыносимое чувство…<br /><br />
+              То, что ты не можешь перестать думать о нём — абсолютно нормально. Твой мозг пытается справиться с шоком и потерей безопасности. Попытки насильно запретить себе думать о человеке всегда работают наоборот: чем сильнее мы стараемся выкинуть что-то из головы, тем больше на этом фокусируемся
+            </div>
+          </div>
+        </div>
+
+        <!-- Создана, чтобы быть под рукой -->
+        <div class="b3__created">
+          <h3 class="b3__title2">
+            <span class="accent">Создана, чтобы быть</span> под рукой <span class="accent">и помочь</span> в момент необходимости
+          </h3>
+          <p class="b3__subtitle2">
+            Мы опросили 600 человек, чтобы понять, чего не хватает людям, когда тяжело<br />
+            <b>Луна собрана под потребности — как инструмент поддержки</b>
+          </p>
+
+          <div class="b3__stack">
+            <div class="b3__scard b3__scard--1">
+              <span class="b3__badge">
+                <img class="b3__pic" src="1.png" alt="" aria-hidden="true" />
+              </span>
+              <h4>Основывается на методах доказательной психологии</h4>
+              <p>КПТ, техники осознанности, DBT и мотивационный подход</p>
+            </div>
+
+            <div class="b3__scard b3__scard--2">
+              <span class="b3__badge">
+                <img class="b3__pic" src="2.png" alt="" aria-hidden="true" />
+              </span>
+              <h4>Определяет твои паттерны</h4>
+              <p>Со временем замечает, что запускает твоё состояние и что помогает. Не просто утешает в моменте, а помогает понять, что с тобой происходит</p>
+            </div>
+
+            <div class="b3__scard b3__scard--3">
+              <span class="b3__badge">
+                <img class="b3__pic" src="3.png" alt="" aria-hidden="true" />
+              </span>
+              <h4>Помнит твою историю</h4>
+              <p>Продолжает с того места, где вы остановились. Не нужно каждый раз объяснять всё заново</p>
+            </div>
+
+            <div class="b3__scard b3__scard--4">
+              <span class="b3__badge">
+                <img class="b3__pic" src="4.png" alt="" aria-hidden="true" />
+              </span>
+              <h4>Ведёт живой диалог</h4>
+              <p>Слушает и задаёт вопросы, а не сыплет советами. Чувствуешь, что тебя понимают</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== БЛОК 4 — За каждым ответом Луны ===================== -->
+  <section class="b4">
+    <!-- спирали (параллакс по скроллу) -->
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:11.64%;--y:32.27%;--s:4.51vw;--rot:-43deg;--op:.6" data-speed="-50" />
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:16.88%;--y:51.79%;--s:2.64vw;--rot:0deg;--op:.4" data-speed="70" />
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:11.43%;--y:68.77%;--s:5.80vw;--rot:144deg;--op:.6" data-speed="-90" />
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:-0.39%;--y:18.70%;--s:13.63vw;--rot:36deg;--op:.2" data-speed="35" />
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:96.15%;--y:7.10%;--s:17.55vw;--rot:36deg;--op:.1" data-speed="25" />
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:81.94%;--y:86.90%;--s:4.77vw;--rot:-35deg;--op:.5" data-speed="-75" />
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:77.64%;--y:72.05%;--s:3.04vw;--rot:-35deg;--op:.2" data-speed="55" />
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:91.86%;--y:53.52%;--s:6.68vw;--rot:55deg;--op:.7" data-speed="-95" />
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:77.71%;--y:39.18%;--s:6.16vw;--rot:-35deg;--op:.3" data-speed="45" />
+    <img class="b4__spiral" src="spiral.svg" alt="" aria-hidden="true" style="--x:6.11%;--y:86.88%;--s:9.23vw;--rot:-35deg;--op:.2" data-speed="-65" />
+
+    <div class="b4__inner">
+      <h2 class="b4__title">
+        За каждым ответом Луны —<br />
+        <span class="accent">знания практикующих психологов</span>
+      </h2>
+      <p class="b4__subtitle">
+        С тобой работают по подходам, которые применяются на приёме у психолога, — <b>только сразу, в любой момент и без оплаты за сессию</b>
+      </p>
+
+      <div class="b4__cards">
+        <div class="b4__card">
+          <h4>Здесь можно говорить свободно</h4>
+          <p>Без имени и регистрации. Можно рассказать то, что не скажешь никому — и это останется только в чате</p>
+        </div>
+
+        <div class="b4__row">
+          <div class="b4__card">
+            <h4>Без осуждения и неловкости</h4>
+            <p>Не нужно подбирать слова и объясняться. Пиши что угодно и сколько угодно</p>
+          </div>
+          <div class="b4__card">
+            <h4>Честно о главном</h4>
+            <p>Если случай серьёзный — подскажет, что пора обратиться к живому психологу, и поможет с этим</p>
+          </div>
+        </div>
+
+        <a class="b4__btn" href="https://t.me/LunaTherapyBot?start=direct_luna" target="_blank" rel="noopener">
+          Начать разговор в telegram
+          <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="tg4" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#2AABEE" />
+                <stop offset="1" stop-color="#229ED9" />
+              </linearGradient>
+            </defs>
+            <circle cx="120" cy="120" r="120" fill="url(#tg4)" />
+            <path fill="#fff" d="M53.7 118.6c34.9-15.2 58.2-25.2 69.8-30.1 33.2-13.8 40.2-16.2 44.7-16.3 1 0 3.2.2 4.7 1.4 1.2 1 1.5 2.3 1.7 3.3.2 1 .4 3.1.2 4.8-1.8 19-9.6 65.1-13.6 86.3-1.7 9-5 12-8.2 12.3-7 .6-12.3-4.6-19-9-10.6-6.9-16.5-11.2-26.8-18-11.9-7.8-4.2-12.1 2.6-19.1 1.8-1.8 32.5-29.8 33.1-32.3.1-.3.1-1.5-.6-2.1s-1.7-.4-2.5-.2c-1.1.2-17.9 11.4-50.6 33.5-4.8 3.3-9.1 4.9-13 4.8-4.3-.1-12.5-2.4-18.7-4.4-7.5-2.4-13.5-3.7-13-7.9.3-2.1 3.3-4.3 9-6.5z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== БЛОК 5 — Тарифы + финальный CTA ===================== -->
+  <section class="b5">
+    <div class="b5__inner">
+      <h2 class="b5__title">
+        Плати как за один приём —<br />
+        <span class="accent">получай поддержку каждый день</span>
+      </h2>
+
+      <div class="b5__pricing">
+        <div class="b5__plans">
+          <!-- Неделя -->
+          <div class="b5__plan">
+            <div>
+              <div class="b5__plan-label">Неделя</div>
+              <div class="b5__plan-price">890&nbsp;₽</div>
+            </div>
+            <p class="b5__plan-desc">попробовать подходит ли формат</p>
+            <a class="b5__plan-btn b5__plan-btn--white" href="https://t.me/LunaTherapyBot?start=direct_luna" target="_blank" rel="noopener">
+              Выбрать неделю
+              <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="tg5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2AABEE"/><stop offset="1" stop-color="#229ED9"/></linearGradient></defs><circle cx="120" cy="120" r="120" fill="url(#tg5)"/><path fill="#fff" d="M53.7 118.6c34.9-15.2 58.2-25.2 69.8-30.1 33.2-13.8 40.2-16.2 44.7-16.3 1 0 3.2.2 4.7 1.4 1.2 1 1.5 2.3 1.7 3.3.2 1 .4 3.1.2 4.8-1.8 19-9.6 65.1-13.6 86.3-1.7 9-5 12-8.2 12.3-7 .6-12.3-4.6-19-9-10.6-6.9-16.5-11.2-26.8-18-11.9-7.8-4.2-12.1 2.6-19.1 1.8-1.8 32.5-29.8 33.1-32.3.1-.3.1-1.5-.6-2.1s-1.7-.4-2.5-.2c-1.1.2-17.9 11.4-50.6 33.5-4.8 3.3-9.1 4.9-13 4.8-4.3-.1-12.5-2.4-18.7-4.4-7.5-2.4-13.5-3.7-13-7.9.3-2.1 3.3-4.3 9-6.5z"/></svg>
+            </a>
+          </div>
+
+          <!-- Месяц (популярный) -->
+          <div class="b5__plan">
+            <span class="b5__badge">Популярный</span>
+            <div>
+              <div class="b5__plan-label">Месяц</div>
+              <div class="b5__plan-price">1790&nbsp;₽</div>
+            </div>
+            <p class="b5__plan-desc">Оптимально, если проходишь через сложный период</p>
+            <a class="b5__plan-btn b5__plan-btn--purple" href="https://t.me/LunaTherapyBot?start=direct_luna" target="_blank" rel="noopener">
+              Начать за 1790&nbsp;₽
+              <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="120" cy="120" r="120" fill="#fff"/><path fill="#229ED9" d="M53.7 118.6c34.9-15.2 58.2-25.2 69.8-30.1 33.2-13.8 40.2-16.2 44.7-16.3 1 0 3.2.2 4.7 1.4 1.2 1 1.5 2.3 1.7 3.3.2 1 .4 3.1.2 4.8-1.8 19-9.6 65.1-13.6 86.3-1.7 9-5 12-8.2 12.3-7 .6-12.3-4.6-19-9-10.6-6.9-16.5-11.2-26.8-18-11.9-7.8-4.2-12.1 2.6-19.1 1.8-1.8 32.5-29.8 33.1-32.3.1-.3.1-1.5-.6-2.1s-1.7-.4-2.5-.2c-1.1.2-17.9 11.4-50.6 33.5-4.8 3.3-9.1 4.9-13 4.8-4.3-.1-12.5-2.4-18.7-4.4-7.5-2.4-13.5-3.7-13-7.9.3-2.1 3.3-4.3 9-6.5z"/></svg>
+            </a>
+          </div>
+
+          <!-- 3 месяца -->
+          <div class="b5__plan">
+            <div>
+              <div class="b5__plan-label">3 месяца</div>
+              <div class="b5__plan-price">3990&nbsp;₽</div>
+            </div>
+            <p class="b5__plan-desc"><b>Выгоднее на 26%</b>, чтобы пройти весь путь, а не половину</p>
+            <a class="b5__plan-btn b5__plan-btn--white" href="https://t.me/LunaTherapyBot?start=direct_luna" target="_blank" rel="noopener">
+              Выбрать 3 месяца
+              <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="120" cy="120" r="120" fill="url(#tg5)"/><path fill="#fff" d="M53.7 118.6c34.9-15.2 58.2-25.2 69.8-30.1 33.2-13.8 40.2-16.2 44.7-16.3 1 0 3.2.2 4.7 1.4 1.2 1 1.5 2.3 1.7 3.3.2 1 .4 3.1.2 4.8-1.8 19-9.6 65.1-13.6 86.3-1.7 9-5 12-8.2 12.3-7 .6-12.3-4.6-19-9-10.6-6.9-16.5-11.2-26.8-18-11.9-7.8-4.2-12.1 2.6-19.1 1.8-1.8 32.5-29.8 33.1-32.3.1-.3.1-1.5-.6-2.1s-1.7-.4-2.5-.2c-1.1.2-17.9 11.4-50.6 33.5-4.8 3.3-9.1 4.9-13 4.8-4.3-.1-12.5-2.4-18.7-4.4-7.5-2.4-13.5-3.7-13-7.9.3-2.1 3.3-4.3 9-6.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- фичи -->
+        <div class="b5__features">
+          <div class="b5__feat"><span class="b5__toggle"><i></i></span>Безлимитное общение без ограничений</div>
+          <div class="b5__feat"><span class="b5__toggle"><i></i></span>Анализ переписок и твоих паттернов</div>
+          <div class="b5__feat"><span class="b5__toggle"><i></i></span>Голосовые ответы</div>
+          <div class="b5__feat"><span class="b5__toggle"><i></i></span>Режимы общения под твоё состояние</div>
+          <div class="b5__feat"><span class="b5__toggle"><i></i></span>Память — Луна помнит твою историю</div>
+          <div class="b5__feat"><span class="b5__toggle"><i></i></span>Поддержка 24/7</div>
+        </div>
+      </div>
+
+      <!-- финальный CTA -->
+      <div class="b5__cta">
+        <div class="b5__cta-left">
+          <h3>Начни прямо сейчас — <span class="accent">бесплатно</span></h3>
+          <a class="b5__cta-btn" href="https://t.me/LunaTherapyBot?start=direct_luna" target="_blank" rel="noopener">
+            Начать разговор в telegram
+            <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="120" cy="120" r="120" fill="url(#tg5)"/><path fill="#fff" d="M53.7 118.6c34.9-15.2 58.2-25.2 69.8-30.1 33.2-13.8 40.2-16.2 44.7-16.3 1 0 3.2.2 4.7 1.4 1.2 1 1.5 2.3 1.7 3.3.2 1 .4 3.1.2 4.8-1.8 19-9.6 65.1-13.6 86.3-1.7 9-5 12-8.2 12.3-7 .6-12.3-4.6-19-9-10.6-6.9-16.5-11.2-26.8-18-11.9-7.8-4.2-12.1 2.6-19.1 1.8-1.8 32.5-29.8 33.1-32.3.1-.3.1-1.5-.6-2.1s-1.7-.4-2.5-.2c-1.1.2-17.9 11.4-50.6 33.5-4.8 3.3-9.1 4.9-13 4.8-4.3-.1-12.5-2.4-18.7-4.4-7.5-2.4-13.5-3.7-13-7.9.3-2.1 3.3-4.3 9-6.5z"/></svg>
+          </a>
+        </div>
+        <div class="b5__cta-media">
+          <div class="b5__phonebox"><img src="phone-screen.jpg" alt="" aria-hidden="true" /></div>
+          <img class="b5__girl" src="avatar.png" alt="Луна" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ФУТЕР ===================== -->
+  <footer class="ft">
+    <img class="ft__watermark" src="watermark.svg" alt="" aria-hidden="true" />
+    <div class="ft__inner">
+      <img class="ft__logo" src="logo.svg" alt="Luna" />
+      <div class="ft__right">
+        <p class="ft__disclaimer">
+          Сервис не является медицинской услугой и не заменяет психологическую, психотерапевтическую, психиатрическую или экстренную помощь. Это базовая поддержка, без гарантии результата. Если есть риск причинить вред себе или другому человеку — обратись в экстренные службы.
+        </p>
+        <button class="ft__policy-link" type="button" data-policy-open>Политика конфиденциальности</button>
+        <a class="ft__dev" href="https://t.me/SveksG" target="_blank" rel="noopener">Разработка сайта</a>
+      </div>
+    </div>
+
+    <!-- модалка политики конфиденциальности -->
+    <div class="ft__modal" id="policy-modal" hidden>
+      <div class="ft__modal-backdrop" data-policy-close></div>
+      <div class="ft__modal-card" role="dialog" aria-modal="true" aria-labelledby="policy-title">
+        <button class="ft__modal-close" type="button" data-policy-close aria-label="Закрыть">&times;</button>
+        <h3 id="policy-title">Политика конфиденциальности</h3>
+        <div class="ft__modal-body">
+<p>Политика обработки персональных данных сайта [домен] и Telegram-бота @LunaTherapyBot. Редакция от 30 сентября 2026 г.</p>
+<h4>1. Общие положения</h4>
+<p>1.1. Политика разработана во исполнение ч. 2 ст. 18.1 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных» (далее — Закон) и определяет, какие персональные данные обрабатывает Оператор, зачем, на каком основании и как их защищает.</p>
+<p>1.2. Политика действует в отношении:</p>
+<ul>
+<li>сайта [домен] и всех его страниц (далее — Сайт);</li>
+<li>Telegram-бота @LunaTherapyBot (далее — Бот, сервис «Луна»).</li>
+</ul>
+<p>1.3. Политика опубликована в открытом доступе на Сайте по адресу [домен]/konfidentsialnost и доступна в Боте по команде /privacy.</p>
+<p>1.4. Термины используются в значениях, установленных ст. 3 Закона. «Пользователь» — физическое лицо, посещающее Сайт или использующее Бот. «Сервис» — программный собеседник на основе технологий искусственного интеллекта, который отвечает Пользователю в Боте текстом или голосом.</p>
+<p>1.5. Сервис «Луна» не является медицинской услугой, психотерапией или психологической консультацией специалиста. Ответы формирует программа, а не человек.</p>
+<h4>2. Какие данные обрабатываются на Сайте</h4>
+<p>2.1. Сайт носит информационный характер. На Сайте нет форм обратной связи, регистрации, личного кабинета, чатов и приёма платежей. Оператор не просит Пользователя вводить на Сайте имя, телефон, e-mail или иные сведения о себе.</p>
+<p>2.2. На Сайте используется сервис веб-аналитики Яндекс Метрика (ООО «ЯНДЕКС», Россия). Счётчик включается только после согласия Пользователя в cookie-баннере. Метрика собирает: cookie-идентификатор, IP-адрес, сведения о браузере, устройстве и операционной системе, просмотренные страницы, источник перехода и UTM-метки, время на Сайте, клики и прокрутку. Цель — статистика посещаемости и оценка эффективности рекламных кампаний. Функция «Вебвизор» (запись сеансов) не используется. ООО «ЯНДЕКС» обрабатывает эти данные по поручению Оператора на условиях использования Яндекс Метрики, данные хранятся в Российской Федерации. Оператор не использует данные Метрики, чтобы установить личность Пользователя.</p>
+<p>2.3. Сайт использует два вида файлов cookie. Необходимые — для работы страниц и запоминания выбора в cookie-баннере, устанавливаются без согласия. Аналитические (Яндекс Метрика) — только после нажатия «Принять» в баннере. Кнопка «Только необходимые» отключает аналитику, доступ к Сайту при этом не ограничивается. Отозвать согласие можно в любой момент кнопкой «Настройки cookie» внизу страницы или удалив cookie в браузере.</p>
+<p>2.4. При открытии любой страницы сервер хостинг-провайдера автоматически фиксирует технические сведения запроса: IP-адрес, дату и время, адрес страницы, тип браузера и устройства. Эти сведения используются только для обеспечения работоспособности и безопасности Сайта (защита от атак, устранение сбоев), не сопоставляются с другими данными и не используются для идентификации Пользователя. Журналы хранятся не более 30 дней и затем удаляются автоматически. Хостинг Сайта размещён на серверах в Российской Федерации</p>
+<p>2.5. Правовые основания: для технических журналов по п. 2.4 — законный интерес Оператора в обеспечении безопасности Сайта (п. 7 ч. 1 ст. 6 Закона); для аналитики по п. 2.2 — согласие Пользователя (п. 1 ч. 1 ст. 6 Закона), которое даётся отдельно через cookie-баннер. Данные Метрики хранятся не дольше [12] месяцев, затем удаляются или обезличиваются.</p>
+<p>2.6. Если Оператор подключит другие инструменты аналитики, рекламные пиксели или формы, Политика будет обновлена до их подключения.</p>
+<h4>3. Переход в Telegram</h4>
+<p>3.1. Кнопки на Сайте содержат ссылку вида t.me/LunaTherapyBot?start=[метка]. Метка указывает только, с какой страницы или блока Сайта выполнен переход. Метка не содержит персональных данных.</p>
+<p>3.2. При нажатии на кнопку Пользователь покидает Сайт и переходит в мессенджер Telegram. Сайт не передаёт в Telegram и Боту никаких сведений о Пользователе, кроме метки из п. 3.1.</p>
+<p>3.3. Telegram — самостоятельный сервис иностранной компании, которая обрабатывает данные своих пользователей (номер телефона, профиль, переписку на своих серверах) по собственным правилам. Оператор не управляет этой обработкой и не отвечает за неё. Рекомендуем ознакомиться с политикой конфиденциальности Telegram на telegram.org/privacy.</p>
+<p>3.4. Доступ к Telegram на территории Российской Федерации в 2026 году ограничивается Роскомнадзором, поэтому Бот может работать нестабильно. Оператор не призывает Пользователей использовать средства обхода ограничений.</p>
+<h4>4. Какие данные обрабатываются в Боте</h4>
+<p>4.1. Бот не запрашивает ФИО, номер телефона, e-mail, паспортные данные и адрес. Пользоваться Ботом можно анонимно.</p>
+<p>4.2. Состав данных, цели и основания:</p>
+<p>Данные</p>
+<p>Цель</p>
+<p>Правовое основание</p>
+<p>Telegram ID, username и имя из профиля Telegram, язык интерфейса</p>
+<p>Работа Бота, учёт лимита бесплатных сообщений, связь с Пользователем в Боте</p>
+<p>Исполнение пользовательского соглашения (п. 5 ч. 1 ст. 6 Закона)</p>
+<p>Метка перехода (start-параметр)</p>
+<p>Статистика: какие страницы Сайта приводят Пользователей</p>
+<p>Согласие Пользователя (п. 1 ч. 1 ст. 6 Закона)</p>
+<p>Текстовые и голосовые сообщения, в том числе сведения о самочувствии, эмоциональном состоянии, отношениях</p>
+<p>Формирование ответов Сервиса и сохранение контекста разговора</p>
+<p>Письменное согласие на обработку специальных категорий данных (п. 1 ч. 2 ст. 10 Закона)</p>
+<p>Статус подписки, дата и сумма оплаты, идентификатор платежа</p>
+<p>Предоставление платного доступа, бухгалтерский и налоговый учёт</p>
+<p>Исполнение договора (п. 5 ч. 1 ст. 6), исполнение обязанностей по закону (п. 2 ч. 1 ст. 6)</p>
+<p>Отзыв и имя, которое Пользователь разрешил указать</p>
+<p>Публикация отзыва на Сайте</p>
+<p>Отдельное согласие на распространение (ст. 10.1 Закона)</p>
+<p>4.3. Сведения о психическом и эмоциональном состоянии относятся к специальным категориям персональных данных (сведения о состоянии здоровья, ст. 10 Закона). Оператор обрабатывает их только после того, как Пользователь дал согласие в Боте.</p>
+<p>4.4. Согласие оформляется отдельным документом, не совмещённым с пользовательским соглашением и иными документами (ч. 4 ст. 9 Закона в ред. Федерального закона от 24.06.2025 № 156-ФЗ). Бот показывает текст согласия до первого разговора. Пользователь подтверждает согласие нажатием кнопки «Согласен(на)», что является простой электронной подписью в соответствии с пользовательским соглашением. До подтверждения Бот не сохраняет и не передаёт сообщения Пользователя.</p>
+<p>4.5. Данные карты Оператор не получает и не хранит. Оплата проходит на стороне платёжного сервиса [наименование], который действует как самостоятельный оператор.</p>
+<p>4.6. Оператор не принимает на основании исключительно автоматизированной обработки решений, порождающих юридические последствия для Пользователя (ст. 16 Закона). Оператор не использует содержание разговоров для рекламы и не продаёт данные.</p>
+<h4>5. Обработка с помощью ИИ, передача и хранение</h4>
+<p>5.1. Для формирования ответов текст сообщения (без Telegram ID, username и имени) передаётся модели искусственного интеллекта. Для голосовых функций используется сервис распознавания и синтеза речи. Эти лица обрабатывают данные по поручению Оператора (ч. 3 ст. 6 Закона), обязаны соблюдать конфиденциальность и не вправе использовать данные в своих целях, в том числе для обучения моделей.</p>
+<p>5.2. Если провайдер находится за пределами Российской Федерации, это трансграничная передача. Оператор уведомил о ней Роскомнадзор в порядке ст. 12 Закона. Пользователь предупреждается об этом в тексте согласия.</p>
+<p>5.3. База данных Бота с персональными данными граждан Российской Федерации (запись, систематизация, накопление, хранение, уточнение, извлечение) ведётся на серверах в Российской Федерации (ч. 5 ст. 18 Закона).</p>
+<p>5.4. Оператор может раскрыть данные государственным органам только в случаях и порядке, прямо предусмотренных законом.</p>
+<p>5.5. Оператор не использует переписку Пользователей для обучения моделей ИИ. Для улучшения качества ответов Оператор может анализировать только обезличенные фрагменты, из которых невозможно установить Пользователя.</p>
+<h4>6. Сроки хранения и права Пользователя</h4>
+<p>6.1. Сроки хранения:</p>
+<p>Данные</p>
+<p>Срок</p>
+<p>Технические журналы Сайта</p>
+<p>до 30 дней</p>
+<p>Переписка с Ботом</p>
+<p>пока действует согласие, но не дольше 12 месяцев с последнего сообщения</p>
+<p>Telegram ID и статус подписки</p>
+<p>пока Пользователь пользуется Ботом, затем 12 месяцев</p>
+<p>Платёжные сведения</p>
+<p>5 лет — срок хранения документов бухгалтерского учёта</p>
+<p>Опубликованный отзыв</p>
+<p>до отзыва согласия на распространение</p>
+<p>6.2. Пользователь может в любой момент удалить свою переписку и данные командой /delete в Боте. Данные уничтожаются в течение 10 рабочих дней, кроме платёжных сведений, которые Оператор обязан хранить по закону.</p>
+<p>6.3. Пользователь вправе:</p>
+<ul>
+<li>получить сведения об обработке своих данных (ст. 14 Закона);</li>
+<li>потребовать уточнить, заблокировать или уничтожить данные, если они неполные, устаревшие или обрабатываются незаконно;</li>
+<li>отозвать согласие — командой /delete</li>
+<li>обжаловать действия Оператора в Роскомнадзоре или в суде.</li>
+</ul>
+<p>6.4. Оператор отвечает на запрос в течение 10 рабочих дней с даты получения. Срок может быть продлён ещё на 5 рабочих дней с уведомлением о причинах.</p>
+<p>6.5. После отзыва согласия Оператор прекращает обработку и уничтожает данные в течение 30 дней, если иное не требуется по закону.</p>
+<h4>7. Возраст, безопасность и экстренная помощь</h4>
+<p>7.1. Сервис предназначен для лиц старше 18 лет. Оператор сознательно не обрабатывает данные несовершеннолетних. Если выяснится, что Ботом пользуется лицо младше 18 лет, Оператор удалит его данные.</p>
+<p>7.2. Оператор принимает меры защиты по ст. 19 Закона: шифрование соединений, разграничение доступа сотрудников, журналирование доступа к базе, резервное копирование, регулярная проверка уязвимостей. Доступ к переписке имеют только уполномоченные лица и только для устранения сбоев или по запросу самого Пользователя.</p>
+<p>7.3. При утечке данных Оператор уведомляет Роскомнадзор в течение 24 часов, а о результатах расследования — в течение 72 часов (ч. 3.1 ст. 21 Закона).</p>
+<p>7.4. Сервис не оказывает медицинскую и экстренную помощь и не заменяет психолога, психотерапевта или врача. Если вам угрожает опасность или вы думаете причинить себе вред, звоните 112. Для детей, подростков и их родителей работает бесплатный телефон доверия 8-800-2000-122.</p>
+<h4>8. Изменение Политики и контакты</h4>
+<p>8.1. Оператор может изменять Политику. Новая редакция вступает в силу с момента публикации на Сайте. При существенных изменениях обработки в Боте Оператор уведомляет Пользователей в Боте и при необходимости запрашивает новое согласие.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== EXIT-INTENT ПОПАП ===================== -->
+  <div class="exitpop" id="exit-pop" hidden>
+    <div class="exitpop__backdrop" data-exit-close></div>
+    <div class="exitpop__card" role="dialog" aria-modal="true" aria-labelledby="exit-title">
+      <button class="exitpop__close" type="button" data-exit-close aria-label="Закрыть">&times;</button>
+      <div class="exitpop__inner">
+        <img class="exitpop__glow" src="exitpop-bg.svg" alt="" aria-hidden="true" />
+        <h3 class="exitpop__title" id="exit-title">Не уходи!<br />Никогда не знаешь когда понадобится кто-то рядом</h3>
+        <p class="exitpop__sub">Отправь одно сообщение — сохрани себе бота</p>
+        <a class="exitpop__btn" href="https://t.me/LunaTherapyBot?start=direct_luna" target="_blank" rel="noopener">
+          Сохранить бота
+          <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><linearGradient id="tgp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2AABEE" /><stop offset="1" stop-color="#229ED9" /></linearGradient></defs>
+            <circle cx="120" cy="120" r="120" fill="url(#tgp)" />
+            <path fill="#fff" d="M53.7 118.6c34.9-15.2 58.2-25.2 69.8-30.1 33.2-13.8 40.2-16.2 44.7-16.3 1 0 3.2.2 4.7 1.4 1.2 1 1.5 2.3 1.7 3.3.2 1 .4 3.1.2 4.8-1.8 19-9.6 65.1-13.6 86.3-1.7 9-5 12-8.2 12.3-7 .6-12.3-4.6-19-9-10.6-6.9-16.5-11.2-26.8-18-11.9-7.8-4.2-12.1 2.6-19.1 1.8-1.8 32.5-29.8 33.1-32.3.1-.3.1-1.5-.6-2.1s-1.7-.4-2.5-.2c-1.1.2-17.9 11.4-50.6 33.5-4.8 3.3-9.1 4.9-13 4.8-4.3-.1-12.5-2.4-18.7-4.4-7.5-2.4-13.5-3.7-13-7.9.3-2.1 3.3-4.3 9-6.5z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <script>
     (function () {
@@ -617,6 +1707,107 @@
       }
       checks.forEach(function (c) { c.addEventListener('change', update); });
       update();
+    })();
+
+    /* Блок 3 — появление стопки карточек друг за другом при скролле */
+    (function () {
+      var stack = document.querySelector('.b3__stack');
+      if (!stack) return;
+      if (!('IntersectionObserver' in window)) { stack.classList.add('is-visible'); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { stack.classList.add('is-visible'); io.disconnect(); }
+        });
+      }, { threshold: 0.2 });
+      io.observe(stack);
+    })();
+
+    /* Блок 4 — спирали: появление при входе + параллакс, привязанный к скроллу */
+    (function () {
+      var sec = document.querySelector('.b4');
+      if (!sec) return;
+      var spirals = Array.prototype.slice.call(sec.querySelectorAll('.b4__spiral'));
+
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) { sec.classList.add('is-in'); io.disconnect(); } });
+        }, { threshold: 0.1 });
+        io.observe(sec);
+      } else {
+        sec.classList.add('is-in');
+      }
+
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      var ticking = false;
+      function update() {
+        ticking = false;
+        var r = sec.getBoundingClientRect();
+        var vh = window.innerHeight || document.documentElement.clientHeight;
+        var t = (r.top + r.height / 2 - vh / 2) / vh; /* ~0 когда секция по центру экрана */
+        for (var i = 0; i < spirals.length; i++) {
+          var sp = spirals[i];
+          var speed = parseFloat(sp.getAttribute('data-speed')) || 0;
+          sp.style.setProperty('--py', (t * speed).toFixed(1) + 'px');
+        }
+      }
+      function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      update();
+    })();
+
+    /* Футер — модалка «Политика конфиденциальности» */
+    (function () {
+      var modal = document.getElementById('policy-modal');
+      if (!modal) return;
+      function open() { modal.hidden = false; document.body.style.overflow = 'hidden'; }
+      function close() { modal.hidden = true; document.body.style.overflow = ''; }
+      document.querySelectorAll('[data-policy-open]').forEach(function (b) { b.addEventListener('click', open); });
+      modal.querySelectorAll('[data-policy-close]').forEach(function (el) { el.addEventListener('click', close); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
+    })();
+
+    /* Exit-intent попап «Не уходи!» — один раз за сессию */
+    (function () {
+      var pop = document.getElementById('exit-pop');
+      if (!pop) return;
+      var KEY = 'luna_exit_shown';
+      var shown = false;
+      function seen() { try { return sessionStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
+      function mark() { try { sessionStorage.setItem(KEY, '1'); } catch (e) {} }
+      function show() {
+        if (shown || seen()) return;
+        shown = true; mark();
+        pop.hidden = false;
+        document.body.style.overflow = 'hidden';
+      }
+      function close() { pop.hidden = true; document.body.style.overflow = ''; }
+      pop.querySelectorAll('[data-exit-close]').forEach(function (el) { el.addEventListener('click', close); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !pop.hidden) close(); });
+
+      if (seen()) return;
+
+      // чуть подождём, чтобы не сработать на случайном движении сразу после загрузки
+      var armed = false;
+      setTimeout(function () { armed = true; }, 2500);
+
+      // Десктоп: курсор уходит за верхний край окна (намерение закрыть вкладку)
+      document.addEventListener('mouseout', function (e) {
+        if (!armed) return;
+        if (e.clientY <= 0 && !e.relatedTarget) { show(); }
+      });
+
+      // Тач-устройства: перехват кнопки «Назад»
+      var isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+      if (isTouch) {
+        try {
+          history.pushState({ luna: 1 }, '');
+          window.addEventListener('popstate', function () {
+            if (!shown && !seen()) { history.pushState({ luna: 1 }, ''); show(); }
+          });
+        } catch (e) {}
+      }
     })();
   </script>
 </body>
